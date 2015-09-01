@@ -1,0 +1,109 @@
+% Author Alfredo Sánchez Alberca (asalber@ceu.es)
+
+\documentclass[a4paper,titlepage]{article}
+%===============================================
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{macros}
+\usepackage{graphicx}
+\usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{fancybox}
+\usepackage{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{pdfauthor={Alfredo Sánchez Alberca (asalber@ceu.es)}, pdftitle={Ejercicios de Estad\'istica} } 
+\usepackage{url}
+\usepackage[top=3cm, bottom=3cm, left=2.54cm, right=2.54cm, marginparwidth=2mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage[table]{xcolor} 
+\definecolor{color1}{RGB}{5,161,230}
+\definecolor{color2}{RGB}{174,49,54}
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+\definecolor{blueceu}{RGB}{5,161,230} % Blue color of CEU logo
+\definecolor{greenceu}{RGB}{185,209,16} % Green color of CEU logo
+\definecolor{redceu}{RGB}{137,28,36} % Red color of CEU logo
+\definecolor{grayceu}{RGB}{111,107,83} % Gray color of CEU logo
+
+\usepackage{booktabs}
+
+\usepackage{media9}
+
+\lhead{\textsc{\textcolor{blueceu}{CEU San Pablo University}}}
+\rhead{\textsl{\textsf{\textcolor{blueceu}{Department of Applied Math and Statistics}}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\floatpagefraction}{.8}
+\renewcommand{\textfraction}{.1}
+
+
+\begin{document}
+\sloppy
+
+\title{\vskip 2cm
+\Huge \textbf{\textsf{\quad \textcolor{blueceu}{EXERCISES OF EXCEL}\quad}}\\
+   \vskip 1cm
+\Large \sffamily
+\begin{tabular}{rl}
+\textcolor{blueceu}{Subject:} & Computer Science\\
+\textcolor{blueceu}{Course:} & 1^{st}\\
+\textcolor{blueceu}{Degree:} &  Business Administration and Management\\
+\textcolor{blueceu}{Year:} & 2015-2016\\
+\textcolor{blueceu}{Authors:} & Cristina Aguirre Arrabal (\url{aguiarr@ceu.es})\\
+& Jesús Diéguez Nanclares (\url{dienanc@ceu.es})\\
+& Juana Mª Domaica Maroto (\url{domaica@ceu.es})\\
+& Elena García-Cuevas Roque (\url{garcue@ceu.es})\\
+& Marta Gutiérrez Jiménez (\url{gutjim@ceu.es})\\
+& Elena Inchausti Tabuenca  (\url{inctab@ceu.es})\\
+& Alfredo Sánchez Alberca (\url{asalber@ceu.es})
+\end{tabular}
+}
+
+\author{}
+\date{\includegraphics[scale=0.3]{img/logo_uspceu_01}}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\input{introduction}
+\input{formulas}
+\input{descriptive_statistics}
+
+\begin{center}
+\includemedia[
+label=some_dice,
+%width=1\textwidth,height=0.6\textwidth,
+addresource=img/out.mp4,
+% activate=pageopen,
+passcontext, %show VPlayer’s right-click menu
+windowed=800x480,
+flashvars={
+source=img/out.mp4
+% &loop=true % loop video
+}
+]{Click to see}{img/VPlayer.swf}
+\end{center}
+
+\newpage
+
+\begin{center}
+\includemedia[
+label=some_dice,
+%width=1\textwidth,height=0.6\textwidth,
+addresource=img/out.mp4,
+% activate=pageopen,
+passcontext, %show VPlayer’s right-click menu
+%windowed=800x480,
+flashvars={
+source=img/out.mp4
+% &loop=true % loop video
+}
+]{\includegraphics[width=\textwidth]{img/example_import_csv.png}}{img/VPlayer.swf}
+\end{center}
+
+Fin
+\end{document}
