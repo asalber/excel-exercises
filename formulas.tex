@@ -1,8 +1,8 @@
 % Author Alfredo Sánchez Alberca (asalber@ceu.es)
 
 \section{Formulas}
-\begin{enumerate}[leftmargin=*]
-\item The following data table contains the income of a company by quarters:
+\begin{enumerate}[leftmargin=*,resume]
+\item \label{income-quarters}The following data table contains the income of a company by quarters:
 \begin{center} 
 \begin{tabular}{rrrr}
 \toprule 
@@ -13,20 +13,23 @@
 \end{tabular}
 \end{center}
 
-Open the Excel file \url{http://aprendeconalf.es/office/excel/exercises/formulas/exercise-1.xlsx} and do the following
-operations:
+Open the Excel file
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/income-by-quarters.xlsx}{\textsf{income-by-quarters.xlsx}}
+and do the following operations:
 
 \begin{enumerate}
 \item Use a formula to calculate the fixed commissions in range B5:E5. The amount of fixed commissions appears in cell B15.
-\item Use a formula to calculate the fixed commissions in range B6:E6. The percentage of variable commissions appears in cell B16.
+\item Use a formula to calculate the variable commissions in range B6:E6. The percentage of variable commissions appears
+in cell B16.
 \item Use a formula to calculate the Earnings Before Taxes (EBT), subtracting commissions to income, in range B7:E7.
 \item Use a formula to calculate taxes in range B9:E9. The percentage of taxes appears in cell B17.
 \item Use a formula to calculate Profit After Taxes (PAT), subtracting taxes to EBT.
-\item Use a formula to calculate the annual income, fixed commissions, variable commissions, EBT, taxes and PAT.  
+\item Use a formula to calculate the annual income, fixed commissions, variable commissions, EBT, taxes and PAT. 
+\item Save the workbook. 
 \end{enumerate}
 
 
-\item A company has had annual sales of € 1.200.000 in 2015.
+\item A company has had annual sales of €1.200.000 in 2015.
 The sales increase forecast for next years appears in the next table.
 \begin{center} 
 \begin{tabular}{rrrrr}
@@ -38,8 +41,9 @@ The sales increase forecast for next years appears in the next table.
 \end{center}
 A 30\% of expenses is assumed every year.
 
-Open the Excel file \url{http://aprendeconalf.es/office/excel/exercises/formulas/exercise-2.xlsx} and do the following
-operations:
+Open the Excel file
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/sales-forecast.xlsx}{\textsf{sales-forecast.xlsx}} and do
+the following operations:
 
 \begin{enumerate}
 \item Use a formula to calculate the sales forecast for every year in cells C4:G4 according to the sales increase percentage of
@@ -47,11 +51,70 @@ cells C12:G12.
 \item Use a formula to calculate the expenses for every year assuming the constant percentage over sales of cell C14.
 \item Use a formula to calculate the profit for every year. 
 \item Use a formula to calculate the average annual sales, expenses and profit for years from 2015 to 2020.
+\item Save the workbook.
+\end{enumerate}
+
+\item A company has done several works in the last month. The number of worked hours, the materials expenses and the
+amount budgeted appear in the table below.
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Work & Worked hours & Materials & Budget \\
+Sevilla	  & 450	& €550,000 & €950,000\\ 
+Barcelona &	275	& €375,000 & €625,000\\ 
+Valencia  & 300 & €450,000 & €750,000\\ 
+Madrid    & 725	& €600,000 & €1,050,000\\ 
+\bottomrule
+\end{tabular}
+\end{center}
+
+Open the Excel file
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/work-cost-analysis.xlsx}{\textsf{work-cost-analysis.xlsx}}
+and do the following operations:
+
+\begin{enumerate}
+\item Assuming that the unit cost per hour is in cell B11, use a formula to calculate the total cost for every work in
+range D3:D6.
+\item Use a formula to calculate the difference between the total cost and the budgeted in range F3:F6.
+\item Use a formula to calculate the minimum worked hours, material expenses and total cost in range B7:D7.
+\item Use a formula to calculate the maximum worked hours, material expenses and total cost in range B8:D8.
+\item Use a formula to calculate the average worked hours, material expenses and total cost in range B9:D9.
+\item Save the workbook. 
+\end{enumerate}
+
+\item The table below contains the total tax due and the amounts invested in donations and primary residence of the
+income tax declaration of three contributors.
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+ & Luis & Ramón & Ana\\
+\midrule
+Total tax due & €19.500 & €3.400 & €31.500\\
+Donations & €1.500 & €800 & €1.200\\
+Primary residence & €12.000 & €18.000 & €15.000\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Open the Excel file
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/income-tax-declaration.xlsx}{\textsf{income-tax-declaration.xlsx}}
+and do the following operations:
+
+\begin{enumerate}
+\item Use a formula to calculate the tax deduction for donations in range B9-D9. According to IRPF law, tax deduction
+for donations is 15\%.
+\item Use a formula to calculate the tax deduction for primary residence in range B10-D10. According to IRPF law, tax deduction
+for primary residence is 20\%.
+\item Use a formula to calculate the total deductions in range B11-D11. 
+\item Use a formula to calculate the total tax due minus deductions in range B13-D13. If it results a negative amount,
+the cell value has to be 0. 
+\item Save the workbook. 
 \end{enumerate}
 
 
-\item A car company have dealerships in several cities. The next table shows the number of vehicles sold in the last month in
-every dealership. 
+\item A car company have dealerships in several cities. The table below shows the number of vehicles sold in the
+last month in every dealership. 
 \begin{center}
 \begin{tabular}{lcccc}
 \toprule
@@ -72,11 +135,80 @@ operations:
 \item Enter the vehicle prices in range F2:F5 with the header ``Unit price'' in cell F1. 
 \item Use a formula to calculate the total sales by vehicle type in range G2:G5 and enter the header ``Total by vehicle'' in cell
 G1. In the formula you have to use references to the cells with the unit prices. 
-\item Use a formula to calculate the total sales by cities in range B6:E6 and enter the header ``Total by city'' in the cell A6.
+\item Use a formula to calculate the total sales by cities in range B6:E6 and enter the header ``Total by city'' in cell A6.
 In the formula you have to use references to the cells with the unit prices. 
 \item Use a formula to calculate the total sales in cell F7 and apply it a bold face font format. 
-\item Save the workbook with name \textsh{car-dealerships.xlsx}. 
+\item Save the workbook in a file with name \textsf{car-dealerships.xlsx}. 
 \end{enumerate}
+
+
+\item The monthly sales of a company in the last quarter appears in the table below. 
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+October & November & December\\
+€1.500 & €1.000 & €2.100\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Open the Excel file
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/last-quarter-balance.xlsx}{\textsf{last-quarter-balance.xlsx}}
+and do the following operations:
+
+\begin{enumerate}
+\item Use a formula to calculate the salaries for every month in range B5:D5. The salaries have a fixed part that
+appears in cell E5, a variable percentage of sales that appears in cell F5 and a plus percentage of sales if sales are greater than €20,000
+that appears in cell G5.
+\item Use a formula to calculate the rest of expenses for every month in range B6:D9. Each type of expenses have a fixed
+part that appears in column E and a variable percentage of sales that appears in column F. 
+\item Use a formula to calculate the total expenses for every month in range B10:D10. 
+\item Use a formula to calculate the profits for every month in range B12:D12.
+\item Use a formula to calculate the minimum expenditure of the quarter in cell B14.
+\item Use a formula to calculate the maximum expenditure of the quarter in cell B15.
+\item Use a formula to calculate the average expenditure of the quarter in cell B16.
+\item Use a formula to calculate the number of expenses of the quarter over €1,500 in cell B14.
+\item Save de workbook.
+\end{enumerate}
+
+\item The table below contains the sales and the salaries of several sellers in a company:
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+& & \multicolumn{3}{c}{Sales}\\
+\cline{3-5}
+Seller & Salary & January & February & Mars \\
+\midrule
+López & €1,500 & €5,340 & €5,500 & €4,970\\
+Merino & €2,100 & €3,560 & €4,525 & €2,850\\
+Pastor & €700  & €2,850 & €2,450 & €1,850\\
+Ramirez & €1,800 & €6,250 & €5,100 & €4,940\\
+Zamora & €1,100 & €5,800 & €4,500 & €6,500\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+According to the policy of the company, sellers with an average ratio between sales and salary greater than 5 will
+receive a 5\% salary increase and sellers with an average ratio lower than 3 will be fired. 
+
+Do the following operations:
+\begin{enumerate}
+\item Crate an Excel workbook an enter the previous table in range a A1:E7. Observe that the cells of range C1:E1 have
+to be merged and centered. 
+\item Use a formula to calculate the ratio between sales and salary (RSS) for every month and seller on range F3:H7.
+Write appropriate headers on cells F1:H2.  
+\item Use a formula to calculate the average RSS for every seller on range I3:I7.
+Write an appropriate header on cell I2. 
+\item Use a formula to write a message with the action to take according to the average RSS on range J3:J7.
+The message should be ``Increase salary'' if RSS$>$5, ``Fire seller'' if RSS$<$5 and ``Nothing'' in any other case.
+Write an appropriate header on cell J2. 
+\item Use a formula to write a message with the new salary according to the action on column J.
+If the action is ``Increase salary'' increase the salary a 5\% and if the action is ``Fire seller'' the new salary will
+be 0. 
+\item Save the workbook in a file with name \textsf{salary-sellers.xlsx}. 
+\end{enumerate}
+
+
 
 
 \end{enumerate}
