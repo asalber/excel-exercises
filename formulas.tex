@@ -80,6 +80,8 @@ range D3:D6.
 \item Use a formula to calculate the minimum worked hours, material expenses and total cost in range B7:D7.
 \item Use a formula to calculate the maximum worked hours, material expenses and total cost in range B8:D8.
 \item Use a formula to calculate the average worked hours, material expenses and total cost in range B9:D9.
+\item Apply a conditional formatting to the range A3:A6 to show the name of the work with the highest cost in red and
+that with the lowest cost in green. 
 \item Save the workbook. 
 \end{enumerate}
 
@@ -147,7 +149,7 @@ In the formula you have to use references to the cells with the unit prices.
 \begin{tabular}{ccc}
 \toprule
 October & November & December\\
-€1.500 & €1.000 & €2.100\\
+€15.000 & €10.000 & €21.000\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -168,8 +170,10 @@ part that appears in column E and a variable percentage of sales that appears in
 \item Use a formula to calculate the maximum expenditure of the quarter in cell B15.
 \item Use a formula to calculate the average expenditure of the quarter in cell B16.
 \item Use a formula to calculate the number of expenses of the quarter over €1,500 in cell B14.
+\item Apply a Data Bars conditional formatting to range B5:D9.
 \item Save de workbook.
 \end{enumerate}
+
 
 \item The table below contains the sales and the salaries of several sellers in a company:
 \begin{center}
@@ -205,10 +209,61 @@ Write an appropriate header on cell J2.
 \item Use a formula to write a message with the new salary according to the action on column J.
 If the action is ``Increase salary'' increase the salary a 5\% and if the action is ``Fire seller'' the new salary will
 be 0. 
+\item Apply an Icon Set conditional formatting to RSS in range F3:H7. Use a green icon if RSS$>$5, a yellow icon if
+3$\leq$RSS$\leq$5 and a red icon if RSS$<3$. Use references to cells C10 and C11 in the conditions. 
 \item Save the workbook in a file with name \textsf{salary-sellers.xlsx}. 
 \end{enumerate}
 
 
+\item The cars company AutocarSA has offices in Madrid, Barcelona, Sevilla and Valencia. 
+The workbook
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/autocarsa.xlsx}{\textsf{autocarsa.xlsx}} has a worksheet
+with the vehicles sold in every quarter for every city. Also it has a worksheet with prices of every vehicle and another
+worksheet with the taxes of every vehicle. 
+Open the workbook and do the following operations:
+
+\begin{enumerate}
+\item In de Madrid worksheet, use a formula to calculate the amount sold (in €) for each type of vehicle in range F3:F6.
+Use references to the prices worksheet. 
+Copy and paste the formula in the worksheets of the other cities. 
+\item In de Madrid worksheet, use a formula to calculate the registration taxes for each type of vehicle in range G3:G6.
+Use references to the taxes worksheet. 
+Copy and paste the formula in the worksheets of the other cities.
+\item In de Madrid worksheet, use a formula to calculate the VAT for each type of vehicle in range H3:H6.
+Use references to the taxes worksheet. 
+Copy and paste the formula in the worksheets of the other cities.
+\item In de Madrid worksheet, use a formula to calculate the amount sold (in €) for every quarter in range
+B7:E7.
+Use references to the prices worksheet. 
+Copy and paste the formula in the worksheets of the other cities.
+\item In de Madrid worksheet, use a formula to calculate the registration taxes for every quarter in range
+B8:E8.
+Use references to the taxes worksheet. 
+Copy and paste the formula in the worksheets of the other cities.
+\item In de Madrid worksheet, use a formula to calculate the VAT for every quarter in range
+B9:E9.
+Use references to the taxes worksheet. 
+Copy and paste the formula in the worksheets of the other cities.
+\item Use a formula to calculate the total amount in cell F7.
+Copy and paste the formula in the worksheets of the other cities.  
+\item Use a formula to calculate the total registration taxes in cell G8.
+Copy and paste the formula in the worksheets of the other cities.  
+\item Use a formula to calculate the total VAT in cell H9.
+Copy and paste the formula in the worksheets of the other cities. 
+\item Use a formula to calculate the grand total in cell I10.
+Copy and paste the formula in the worksheets of the other cities.
+\item Copy and paste the sales for every vehicle from the Madrid worksheet to the appropriate range in the Resume
+worksheet.
+Do the same for the other cities.  
+\item Copy and paste the amount, registration taxes, VAT and total form the Madrid worksheet to the appropriate
+range in the Resume worksheet. 
+Do the same for the other cities. 
+\item Use a formula to calculate the totals sales for every vehicle type in all the cities in range F3:F6 of the Resume
+worksheet. 
+\item Use a formula to calculate the total amounts, registrations taxes, VAT for all the cities in range F7:F9 of the
+Resume worksheet. 
+\item Use a formula to calculate the grand total for all the cities in cell F10 of the Resume worksheet. 
+\end{enumerate} 
 
 
 \end{enumerate}
