@@ -2,7 +2,7 @@
 
 \section{Formulas}
 \begin{enumerate}[leftmargin=*,resume]
-\item \label{income-quarters}The following data table contains the income of a company by quarters:
+\item \label{ex-income-quarters}The following data table contains the income of a company by quarters:
 \begin{center} 
 \begin{tabular}{rrrr}
 \toprule 
@@ -13,7 +13,7 @@
 \end{tabular}
 \end{center}
 
-Open the Excel file
+Open the Excel workbook
 \href{http://aprendeconalf.es/office/excel/exercises/formulas/income-by-quarters.xlsx}{\textsf{income-by-quarters.xlsx}}
 and do the following operations:
 
@@ -29,7 +29,7 @@ in cell B16.
 \end{enumerate}
 
 
-\item A company has had annual sales of €1.200.000 in 2015.
+\item \label{ex-sales-forecast}A company has had annual sales of €1.200.000 in 2015.
 The sales increase forecast for next years appears in the next table.
 \begin{center} 
 \begin{tabular}{rrrrr}
@@ -41,7 +41,7 @@ The sales increase forecast for next years appears in the next table.
 \end{center}
 A 30\% of expenses is assumed every year.
 
-Open the Excel file
+Open the Excel workbook
 \href{http://aprendeconalf.es/office/excel/exercises/formulas/sales-forecast.xlsx}{\textsf{sales-forecast.xlsx}} and do
 the following operations:
 
@@ -69,7 +69,7 @@ Madrid    & 725	& €600,000 & €1,050,000\\
 \end{tabular}
 \end{center}
 
-Open the Excel file
+Open the Excel workbook
 \href{http://aprendeconalf.es/office/excel/exercises/formulas/work-cost-analysis.xlsx}{\textsf{work-cost-analysis.xlsx}}
 and do the following operations:
 
@@ -99,7 +99,7 @@ Primary residence & €12.000 & €18.000 & €15.000\\
 \end{tabular}
 \end{center}
 
-Open the Excel file
+Open the Excel workbook
 \href{http://aprendeconalf.es/office/excel/exercises/formulas/income-tax-declaration.xlsx}{\textsf{income-tax-declaration.xlsx}}
 and do the following operations:
 
@@ -115,8 +115,8 @@ the cell value has to be 0.
 \end{enumerate}
 
 
-\item A car company have dealerships in several cities. The table below shows the number of vehicles sold in the
-last month in every dealership. 
+\item \label{ex-car-dealerships}A car company have dealerships in several cities. The table below shows the number of
+vehicles sold in the last month in every dealership. 
 \begin{center}
 \begin{tabular}{lcccc}
 \toprule
@@ -134,11 +134,12 @@ If van price is €$12,800$, lorry price is €$27,000$, car price is €$11,750
 operations:
 \begin{enumerate}
 \item Create a new Excel workbook and enter the previous table with the vehicle sales in range A1:E5.
-\item Enter the vehicle prices in range F2:F5 with the header ``Unit price'' in cell F1. 
+\item Enter the vehicle prices in range F2:F5 with the header ``Unit price'' in cell F1.
+Give a name to every cell with a price. 
 \item Use a formula to calculate the total sales by vehicle type in range G2:G5 and enter the header ``Total by vehicle'' in cell
 G1. In the formula you have to use references to the cells with the unit prices. 
 \item Use a formula to calculate the total sales by cities in range B6:E6 and enter the header ``Total by city'' in cell A6.
-In the formula you have to use references to the cells with the unit prices. 
+In the formula you have to use the named cells with the vehicles prices. 
 \item Use a formula to calculate the total sales in cell F7 and apply it a bold face font format. 
 \item Save the workbook in a file with name \textsf{car-dealerships.xlsx}. 
 \end{enumerate}
@@ -154,7 +155,7 @@ October & November & December\\
 \end{tabular}
 \end{center}
 
-Open the Excel file
+Open the Excel workbook
 \href{http://aprendeconalf.es/office/excel/exercises/formulas/last-quarter-balance.xlsx}{\textsf{last-quarter-balance.xlsx}}
 and do the following operations:
 
@@ -174,8 +175,83 @@ part that appears in column E and a variable percentage of sales that appears in
 \item Save de workbook.
 \end{enumerate}
 
+\item An Internet provider wants to calculate how much have to paid their clients by the service.
+The Excel workbook
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/internet-services.xlsx}{\textsf{internet-services.xlsx}}
+contains the the starting and ending dates of several Internet users. 
+Open the workbook and do the following operations:
+\begin{enumerate}
+\item Use a formula to calculate the number of days that users have been using Internet service. 
+\item Use a formula to calculate the cost of the Internet service for every user.
+Apply a discount to the final cost according to the table below:
+\begin{center}
+\begin{tabular}{lc}
+\textbf{Days} & \textbf{Discount}\\
+Less than 90 days & 0\%\\
+Between 90 and 179 days & 5\%\\
+Between 180 and 359 days & 10\%\\
+360 days or more & 20\%\\
+\end{tabular}
+\end{center}  
+Use references to cell B13 and range A16:B18.
+\item Use a formula to calculate the total number of days in cell D11 and the total cost in cell E11. 
+\item Use conditional formatting to apply to range D3:D10 a red font colour if number days is greater than or equal to
+360, a yellow colour if number of days is between  180 and 350 and a green colour if number of days is between 90 and
+179. 
+\item Save de workbook. 
+\end{enumerate}
 
-\item The table below contains the sales and the salaries of several sellers in a company:
+
+\item The CEU academy wants to elaborate the payroll for the last month. 
+The Excel workbook
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/payroll.xlsx}{\textsf{payroll.xlsx}} has a
+worksheet with the basic salary of the CEU academy employees. 
+Open the workbook and do the following operations:
+\begin{enumerate}
+\item Use a formula to calculate the overtime salary of every employee in range B7:F7. Use references to the extra hours
+of each employee are in the range B21:F21 and the remuneration of an extra hour in cell B24.
+\item Use a formula to calculate the commissions of every employee in range B8:F8.
+The commissions are calculated applying a percentage on the basic salary.
+Use references to the commission percentage of each employee in the range B22:F22.
+\item Use a formula to calculate the antiquity bonus for every employee. An employee has right to the bonus if he stated
+to work before the date of cell B19. The amount of the antiquity bonus is in cell B20.
+\item Use a formula to calculate the gross salary for every employee in range B10:F10.
+\item Use a formula to calculate the social security discount for every employee in range B12:F12.
+The social security discounts are calculated applying the percentage of cell B25 on the gross salary. 
+\item Use a formula to calculate the IRPF taxes for every employee in range B13:F13. 
+The IRPF taxes are calculated applying a percentage on the gross salary.
+Use references to the IRPF tax percentage of each employee in the range B26:F26.
+\item Use a formula to calculate the net salary for every employee in range B15:F15.
+\item Save the workbook.
+\end{enumerate}
+
+\item \label{ex-laboratory-suppliers}A laboratory has several suppliers of a product with different unit prices and
+discounts.
+The Excel workbook
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/laboratory-suppliers.xlsx}{\textsf{laboratory-suppliers.xlsx}}
+has a worksheet with the supplied units in the first quarter of this year by months. 
+Open the workbook and do the following operations: 
+\begin{enumerate}
+\item Use a formula to calculate the cost of supplied units by every supplier each month in range E10:G12.  
+Apply the unit price of every supplier that appears in range B3:B5.
+Also apply the discount of every supplier that appears in range C3:C5 if the supplied units are greater than or equal to
+the minimum units to apply the discount that appear in range D3:D5. 
+\item Use a formula to calculate the total cost of supplied units for every supplier in range H10:H12. 
+\item Use a formula to calculate the total supplied units and the total cost of supplied units by months in range
+B13:G13.
+\item Use a formula to calculate the grand total cots in cell H13. 
+\item Use a formula to show the month with the highest cost in cell D15. 
+\item Use a formula to calculate the average monthly cost by suppliers in range I10:I12. 
+\item Every supplier will apply a bonus discount the next quarter if the laboratory has an average monthly purchases
+over a minimum specified in range E3:E5 and if the supplied units all the months are greater than or equal to the
+minimum units specified in range F3:F5.
+Use a formula to calculate if every supplier will apply a bonus discount next quarter in range J10:J12.
+The formula should return ``YES'' or ``NO'' if the supplier will apply the bonus or not respectively. 
+\item Save the workbook.   
+\end{enumerate} 
+
+
+\item \label{ex-salary-sellers}The table below contains the sales and the salaries of several sellers in a company:
 \begin{center}
 \begin{tabular}{lrrrr}
 \toprule
@@ -214,9 +290,47 @@ be 0.
 \item Save the workbook in a file with name \textsf{salary-sellers.xlsx}. 
 \end{enumerate}
 
+\item \label{ex-quarter-payroll}The Excel workbook
+\href{http://aprendeconalf.es/office/excel/exercises/formulas/quarter-payroll.xlsx}{\textsf{quarter-payroll.xlsx}}
+contains the salaries of the employees of a company for the first quarter of this year.
+The salaries of each month is in a distinct worksheet. 
+Open the workbook and do the following operations:
+\begin{enumerate}
+\item In the January worksheet, use a formula to calculate the commission for every employee. 
+The commissions are calculated applying the appropriate percentage of the Commissions and taxes worksheet to the sales. 
+Calculate the commissions for the other months copying and pasting this formula. 
+\item In the January worksheet, use a formula to calculate the gross salary for every employee. 
+The gross salary is the sum of the basic salary in the salaries worksheet and the commissions. 
+Calculate the gross salaries for the other months copying and pasting this formula. 
+\item In the January worksheet, use a formula to calculate the IRPF for every employee. 
+The IRPF taxes are calculated applying the appropriate percentage of the Commissions and taxes worksheet to the gross
+salary.
+Calculate the IRPF for the other months copying and pasting this formula. 
+\item In the January worksheet, use a formula to calculate the social security discount for every employee. 
+The social security discounts are calculated applying the appropriate percentage of the Commissions and taxes worksheet
+to the gross salary.
+Calculate the social security discounts for the other months copying and pasting this formula. 
+\item In the January worksheet, use a formula to calculate the net salary for every employee. 
+The net salaries are calculated subtracting IRPF and social security discounts form gross salaries.
+Calculate the net salaries for the other months copying and pasting this formula.
+\item In worksheet 1st quarter, use a formula to calculate the average monthly sales for every employee in range
+B3:B7.
+\item In worksheet 1st quarter, use a formula to calculate the incentive for every employee in range C3:C7.
+The incentives are calculated applying the appropriate percentage of the Commissions and taxes worksheet
+to the average monthly sales. 
+\item In worksheet 1st quarter, use a formula to calculate the total gross salary of the first quarter for
+every employee in range D3:D7.
+\item In worksheet 1st quarter, use a formula to calculate the total gross salary of the first quarter for
+every employee in range D3:D7.
+\item In worksheet 1st quarter, use a formula to calculate the total IRPF of the first quarter for
+every employee in range D3:D7.
+\item In worksheet 1st quarter, use a formula to calculate the total social security discount of the first quarter for
+every employee in range D3:D7.
+\item Save the workbook. 
+\end{enumerate}
 
-\item The cars company AutocarSA has offices in Madrid, Barcelona, Sevilla and Valencia. 
-The workbook
+\item \label{ex-autocarsa}The cars company AutocarSA has offices in Madrid, Barcelona, Sevilla and Valencia. 
+The Excel workbook
 \href{http://aprendeconalf.es/office/excel/exercises/formulas/autocarsa.xlsx}{\textsf{autocarsa.xlsx}} has a worksheet
 with the vehicles sold in every quarter for every city. Also it has a worksheet with prices of every vehicle and another
 worksheet with the taxes of every vehicle. 
